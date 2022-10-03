@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import { Container, Nav, Logo, Search } from "./styles";
-import Link from "../Link";
+import { Container, Nav, Logo, Search } from './styles';
+import Link from '../Link';
 
 function Header() {
   return (
     <Container>
       <Nav>
-        <Logo>CORA'L</Logo>
+        <Logo>CORA`L</Logo>
         <ul>
-          <Link>Handbags</Link>
-          <Link>Watches</Link>
-          <Link>Skincare</Link>
-          <Link>Jewellery</Link>
-          <Link>Apparels</Link>
+          <Link href="index">Handbags</Link>
+          <Link href="index">Watches</Link>
+          <Link href="index">Skincare</Link>
+          <Link href="index">Jewellery</Link>
+          <Link href="index">Apparels</Link>
         </ul>
       </Nav>
       <Search>
