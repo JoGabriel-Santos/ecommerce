@@ -1,7 +1,13 @@
 import React from 'react';
 
-import { Container, Nav, Logo, Search } from './styles';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { MdPersonOutline } from 'react-icons/md';
+import { FiShoppingBag } from 'react-icons/fi';
+
 import Link from '../Link';
+import InputSearch from '../InputSearch';
+
+import { Container, Nav, Logo, SearchWrapper, IconWrapper } from './styles';
 
 function Header() {
   return (
@@ -16,12 +22,20 @@ function Header() {
           <Link href="index">Apparels</Link>
         </ul>
       </Nav>
-      <Search>
-        <input type="search" />
-        <i>i1</i>
-        <i>i2</i>
-        <i>i3</i>
-      </Search>
+      <SearchWrapper>
+        <InputSearch />
+        <IconWrapper>
+          <i>
+            <AiOutlineHeart />
+          </i>
+          <i>
+            <MdPersonOutline />
+          </i>
+          <i>
+            <FiShoppingBag />
+          </i>
+        </IconWrapper>
+      </SearchWrapper>
     </Container>
   );
 }
