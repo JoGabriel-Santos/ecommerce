@@ -11,7 +11,7 @@ export const Container = styled.header`
 
 export const Logo = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
-  ${({ theme }) => theme.font.large}
+  ${({ theme }) => theme.fonts.DisplayLg}
 `;
 
 export const Nav = styled.nav`
@@ -23,6 +23,7 @@ export const Nav = styled.nav`
   ul {
     display: flex;
     gap: 20px;
+    color: ${({ theme }) => theme.colors.highEmphasy};
   }
 `;
 

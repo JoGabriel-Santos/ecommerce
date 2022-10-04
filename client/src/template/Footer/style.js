@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  position: fixed;
+  /* position: fixed; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: 1fr; */
+
   width: 100%;
-  color: ${({ theme }) => theme.colors.gray};
+  padding: 2rem 1rem 4rem 1rem;
+
+  color: ${({ theme }) => theme.colors.bright};
   background-color: ${({ theme }) => theme.colors.primary};
 `;
 
@@ -15,16 +17,24 @@ export const FooterSection = styled.div`
   align-items: flex-start;
   justify-content: space-around;
 
-  padding: 1rem 0rem;
-
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 `;
 
 export const FooterLinks = styled.div`
-  padding: 0rem 0.5rem;
-  border: 1px solid white;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+`;
+export const LinkWrapper = styled.div`
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  color: ${({ theme }) => theme.colors.lightText};
+  ${({ theme }) => theme.fonts.bodyMd}
 `;
 
-export const FooterTitle = styled.h5``;
+export const FooterTitle = styled.h5`
+  ${({ theme }) => theme.fonts.bodyMd}
+`;
 
 export const FooterSocialSection = styled.div``;
