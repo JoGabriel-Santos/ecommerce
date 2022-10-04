@@ -1,11 +1,9 @@
-import React from 'react';
-
 import { AiOutlineHeart } from 'react-icons/ai';
 import { MdPersonOutline } from 'react-icons/md';
 import { FiShoppingBag } from 'react-icons/fi';
 
-import Link from '../Link';
-import InputSearch from '../InputSearch';
+import Link from '../../components/Link';
+import InputSearch from '../../components/InputSearch';
 
 import { Container, Nav, Logo, SearchWrapper, IconWrapper } from './styles';
 
