@@ -1,9 +1,16 @@
+import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { RiInstagramFill } from 'react-icons/ri';
+import { FiMapPin } from 'react-icons/fi';
+
 import Link from '../../components/Link';
 
 import {
   Container,
+  FooterCopy,
   FooterLinks,
   FooterSection,
+  FooterSocialBtn,
+  FooterSocials,
   FooterSocialSection,
   FooterTitle,
   LinkWrapper,
@@ -50,9 +57,30 @@ function Footer() {
       </FooterSection>
 
       <FooterSocialSection>
-        <i>insta</i>
-        <i>insta</i>
-        <i>insta</i>
+        <FooterSocials>
+          <FooterSocialBtn type="button">
+            <FaFacebookF />
+          </FooterSocialBtn>
+
+          <FooterSocialBtn type="button">
+            <RiInstagramFill />
+          </FooterSocialBtn>
+
+          <FooterSocialBtn type="button">
+            <FaTwitter />
+          </FooterSocialBtn>
+
+          <FooterSocialBtn type="button">
+            <FaYoutube />
+          </FooterSocialBtn>
+        </FooterSocials>
+        <FooterCopy>
+          <div>
+            <FiMapPin />
+            <p>United States</p>
+          </div>
+          <p>© 2021 | Cora Leviene All Rights Reserved</p>
+        </FooterCopy>
       </FooterSocialSection>
     </Container>
   );
