@@ -1,8 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledLink = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.highEmphasy};
+  color: inherit;
+  font-weight: 500;
+  line-height: 18px;
 
   &:hover {
     opacity: 0.8;
