@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  /* position: fixed; */
+  /* position: sticky; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
