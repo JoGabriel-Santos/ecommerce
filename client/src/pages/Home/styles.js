@@ -65,4 +65,24 @@ export const HeroDisplayMessage = styled.div`
 
 export const ArrivalSection = styled.section`
   display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  padding: 1rem;
+
+  border: 1px solid black;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 12px;
+    }
+  }
+`;
+
+export const ArrivalProducts = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid blue;
 `;
